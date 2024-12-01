@@ -57,6 +57,11 @@ h2 {
   color: hsl(14, 45%, 36%);
 }
 
+h3 {
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
 p {
   padding-left: 40px;
   line-height: 1.5;
@@ -85,4 +90,12 @@ p {
 
 ul:first-of-type {
   padding-left: 3.5em;
+}
+
+li {
+  padding-left: 15px;
+}
+
+li::first-letter {
+  font-weight: bold;
 }
