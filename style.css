@@ -13,17 +13,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 192vh;
+  min-height: 180vh;
 }
 
 .mcontainer {
   background-color: hsl(0, 0%, 100%);
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; Not always necessary. Sometimes a gap solve the space. */
+  gap: 2rem;
   align-items: flex-start;
-  width: 660px;
-  height: 1615px;
+  max-width: 660px;
+  /* height: 1615px; */
   border-radius: 23px;
 }
 
@@ -40,7 +41,7 @@ img {
   align-self: center;
   border-radius: 0.8em;
   margin-bottom: 12px;
-  margin-top: 1em;
+  margin-top: 3em;
 }
 
 h1 {
@@ -137,8 +138,13 @@ table {
   line-height: 2.5;
 }
 
+th {
+  font-weight: normal;
+}
+
 td {
   padding-left: 20px;
+  font-weight: bold;
 }
 
 tr {
